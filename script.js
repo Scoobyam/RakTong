@@ -24,17 +24,15 @@ reels = document.querySelectorAll(".reel-strip");
 
 function spin(){
 
-    paper.style.transform =
-    "translateY(-240px)";
-    
+    paper.style.transition = "none";
+    paper.style.transform = "translateY(-240px)";
+
     reels.forEach((reel, index)=>{
 
         let symbolHeight = 377;
-
         let randomIndex = 2;
 
-        let distance =
-        -(symbolHeight * randomIndex);
+        let distance = -(symbolHeight * randomIndex);
 
         reel.style.transition =
         "transform 5s cubic-bezier(.17,.67,.12,1)";
@@ -47,6 +45,7 @@ function spin(){
 
     setTimeout(()=>{
 
+        paper.style.transition = "3s ease-out";
         paper.style.transform =
         "translateY(-30px)";
 
