@@ -152,6 +152,9 @@ body{
 
     transition:3s ease-out;
 }
+.paper-box{
+    contain:paint;
+}
 
 .chan{
 
