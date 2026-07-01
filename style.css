@@ -133,7 +133,7 @@ body{
     position:absolute;
 
     left:50%;
-    top:421px;   /* ปรับช่องตรงนี้ */
+    top:421px;
 
     width:200px;
     height:500px;
@@ -143,8 +143,12 @@ body{
     transform:translateX(-50%);
 
     z-index:20;
-}
 
+    visibility:hidden;
+}
+.paper-box.show{
+    visibility:visible;
+}
 
 .paper{
 
