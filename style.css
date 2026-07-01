@@ -138,9 +138,9 @@ body{
     width:200px;
     height:500px;
 
-    overflow:hidden;
+    overflow:clip;
 
-    transform:translate3d(-50%,0,0);
+    transform:translateX(-50%);
 
     z-index:20;
 }
@@ -148,12 +148,12 @@ body{
 
     width:200px;
 
-    transform:translate3d(0,-240px,0);
+    transform:translateY(-240px);
 
-    transition:3s ease-out;
+    transition:transform 3s ease-out;
 }
 .paper-box{
-    contain:paint;
+    overflow:clip;
 }
 
 .chan{
