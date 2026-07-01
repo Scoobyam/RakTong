@@ -133,7 +133,7 @@ body{
     position:absolute;
 
     left:50%;
-    top:421px;   /* ปรับช่องตรงนี้ */
+    top:421px;
 
     width:200px;
     height:500px;
@@ -148,12 +148,16 @@ body{
 
 .paper{
 
-    width:200px;
+    width:100%;
+    height:auto;
 
     transform:translateY(-240px);
 
     transition:3s ease-out;
+}
 
+html, body{
+    overflow-x:hidden;
 }
 
 .chan{
