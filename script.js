@@ -23,7 +23,7 @@ reels.forEach(reel => {
 reels = document.querySelectorAll(".reel-strip");
 
 function spin(){
-    
+
     reels.forEach((reel, index)=>{
 
         let symbolHeight = 377;
