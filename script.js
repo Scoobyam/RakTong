@@ -24,6 +24,9 @@ reels = document.querySelectorAll(".reel-strip");
 
 function spin(){
 
+    paper.style.transform =
+    "translateY(-240px)";
+    
     reels.forEach((reel, index)=>{
 
         let symbolHeight = 377;
