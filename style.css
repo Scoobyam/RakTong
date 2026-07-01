@@ -149,11 +149,13 @@ body{
     width:200px;
 
     transform:translateY(-240px);
+    opacity:0;
 
-    transition:3s ease-out;
-
-    will-change:transform;
+    transition:
+    transform 3s ease-out,
+    opacity .01s;
 }
+paper.style.opacity = "1";
 
 .chan{
 
