@@ -9,6 +9,7 @@ body{
 
     width:100vw;
     height:100vh;
+    height:100dvh;
 
     overflow:hidden;
 
@@ -65,7 +66,7 @@ body{
 
 .reel{
 
-    width: 65px;px;
+    width: 65px;
     height:127px;
 
     overflow:hidden;
@@ -138,9 +139,10 @@ body{
     width:200px;
     height:500px;
 
-    overflow:clip;
+    overflow:hidden;
 
     transform:translateX(-50%);
+    -webkit-transform:translateX(-50%);
 
     z-index:20;
 }
@@ -149,11 +151,13 @@ body{
     width:200px;
 
     transform:translateY(-240px);
+    -webkit-transform:translateY(-240px);
 
     transition:transform 3s ease-out;
-}
-.paper-box{
-    overflow:clip;
+    -webkit-transition:-webkit-transform 3s ease-out;
+
+    backface-visibility:hidden;
+    -webkit-backface-visibility:hidden;
 }
 
 .chan{
