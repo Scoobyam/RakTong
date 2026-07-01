@@ -25,6 +25,7 @@ body{
 
 
 .reel-frame{
+
     position:absolute;
 
     top:140px;
@@ -34,10 +35,11 @@ body{
 
     width:280px;
 
-    z-index:20;
+    z-index:5;
 
     pointer-events:none;
 }
+.slots{
 
     z-index:4;
 
