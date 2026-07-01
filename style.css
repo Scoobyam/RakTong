@@ -1,0 +1,173 @@
+body{
+
+    margin:0;
+
+    background-image:url("assets/BG-01.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    width:100vw;
+    height:100vh;
+
+    overflow:hidden;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.game{
+    text-align:center;
+}
+
+
+.reel-frame{
+
+    position:absolute;
+
+    top:140px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:280px;
+
+    z-index:5;
+
+    pointer-events:none;
+}
+.slots{
+
+    z-index:4;
+
+}
+
+.slots{
+
+    position:absolute;
+
+    top:151px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex !important;
+
+    flex-direction:row !important;
+
+    gap:10px;
+
+}
+
+
+.reel{
+
+    width: 65px;px;
+    height:127px;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+
+.reel-strip{
+
+    position:relative;
+
+    width:100%;
+
+    display:block;
+
+    transition:transform 2s ease-out;
+
+}
+
+.lever{
+    width:80px;
+    cursor:pointer;
+}
+
+.machine{
+
+    position:relative;
+
+    width: 400px;
+    height:600px;
+
+}
+
+
+.machine-bg{
+
+    width:100%;
+
+}
+.lever-area{
+
+    position:absolute;
+
+    right:-23px;
+    top:20px;
+
+}
+
+
+.lever{
+
+    width:60px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+    transform-origin: bottom center;
+
+}
+.paper-box{
+
+    position:absolute;
+
+    left:50%;
+    top:421px;   /* ปรับช่องตรงนี้ */
+
+    width:200px;
+    height:500px;
+
+    overflow:hidden;
+
+    transform:translateX(-50%);
+
+    z-index:20;
+}
+
+
+.paper{
+
+    width:200px;
+
+    transform:translateY(-240px);
+
+    transition:3s ease-out;
+
+}
+
+.chan{
+
+    position:absolute;
+
+    width:315px;
+
+    left:50%;
+
+    top:395px;
+
+    transform:translateX(-49.5%);
+
+    z-index:10;
+
+}
