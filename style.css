@@ -142,7 +142,6 @@ body{
     overflow:hidden;
 
     transform:translateX(-50%);
-    -webkit-transform:translateX(-50%);
 
     z-index:20;
 }
@@ -151,13 +150,10 @@ body{
     width:200px;
 
     transform:translateY(-240px);
-    -webkit-transform:translateY(-240px);
 
-    transition:transform 3s ease-out;
-    -webkit-transition:-webkit-transform 3s ease-out;
+    transition:3s ease-out;
 
-    backface-visibility:hidden;
-    -webkit-backface-visibility:hidden;
+    will-change:transform;
 }
 
 .chan{
