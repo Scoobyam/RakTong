@@ -140,28 +140,19 @@ body{
 
     overflow:hidden;
 
-    transform:translateX(-50%);
+    transform:translate3d(-50%,0,0);
 
     z-index:20;
-
-    will-change:transform;
 }
-
 .paper{
 
     width:200px;
 
-    transform:translateY(-240px);
+    transform:translate3d(0,-240px,0);
 
     transition:3s ease-out;
-
-    will-change:transform;
 }
 
-.paper-box,
-.paper{
-    backface-visibility:hidden;
-}
 .chan{
 
     position:absolute;
