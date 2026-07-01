@@ -143,15 +143,11 @@ body{
     transform:translateX(-50%);
 
     z-index:2;
-
-    visibility:hidden;
 }
 
-.paper-box.show{
-    visibility:visible;
-}
 
 .paper{
+
     width:100%;
     height:auto;
 
