@@ -146,11 +146,10 @@ body{
 }
 
 .paper{
-
     width:100%;
     height:auto;
 
-    transform:translateY(-240px);
+    transform:translateY(0);
 
     transition:3s ease-out;
 }
